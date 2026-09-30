@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JD Time | Relojes y lociones</title>
+  <meta name="description" content="JD Time es una tienda de relojes y lociones. Consulta el catálogo, arma tu pedido y confírmalo por WhatsApp.">
+  <meta name="theme-color" content="#1c1916">
+  <meta property="og:title" content="JD Time">
+  <meta property="og:description" content="Relojes y lociones con pedidos directos por WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <link rel="icon" href="assets/iconos/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-pagina="inicio">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  
+  <header class="cabecera">
+    <div class="envoltura cabecera__interior">
+      <a class="marca" href="index.html">
+        <img src="/frontend/img/logo.jpg" alt="" width="40" height="40" style="border-radius: 8px;">
+        <span class="marca__texto">
+          <strong>JD Time</strong>
+          <small>Relojes y lociones</small>
+        </span>
+      </a>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="navegacion">Menú</button>
+      <nav id="navegacion" class="nav" aria-label="Principal">
+        <a href="index.html" data-nav="inicio">Inicio</a>
+        <a href="catalogo.html" data-nav="catalogo">Catálogo</a>
+        <a href="catalogo.html?categoria=relojes" data-nav="relojes">Relojes</a>
+        <a href="catalogo.html?categoria=lociones" data-nav="lociones">Lociones</a>
+        <a class="carrito-enlace" href="carrito.html" data-nav="carrito">
+          Carrito
+          <span class="contador" data-contador>0</span>
+          <span class="sr" data-contador-texto>0 productos en el carrito</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <div class="envoltura">
+      <section class="hero">
+        <div>
+          <p class="sobrelinea">JD Time</p>
+          <h1>Relojes y lociones para quien cuida los detalles.</h1>
+          <p class="hero__texto">El tiempo pasa. La presencia permanece. Descubre una selección de relojes y fragancias creada para convertir cada instante en una impresión inolvidable.</p>
+          <div class="hero__acciones">
+            <a class="boton" href="catalogo.html">Ver catálogo</a>
+            <a class="boton boton--borde" href="catalogo.html?categoria=relojes">Relojes</a>
+          </div>
+        </div>
+        <figure class="hero__visual">
+          <img src="/frontend/img/locion.jpg" alt="Ilustración de un reloj y una loción de JD Time" width="640" height="800" fetchpriority="high">
+        </figure>
+      </section>
+
+
+      <section class="seccion" aria-labelledby="titulo-seleccion">
+        <div class="seccion__encabezado">
+          <h2 id="titulo-seleccion">Productos destacados</h2>
+          <a href="catalogo.html">Ver todo</a>
+        </div>
+        <noscript><p class="estado">Activa JavaScript para ver los productos y usar el carrito.</p></noscript>
+        <p id="estado-inicio" class="estado">Cargando productos…</p>
+        <div id="destacados" class="rejilla"></div>
+      </section>
+
+    </div>
+  </main>
+  <footer class="pie">
+    <div class="envoltura pie__interior">
+      <div>
+        <p class="marca-pie">JD Time</p>
+        <p>Relojes y lociones, con pedidos directos por WhatsApp.</p>
+      </div>
+      <nav aria-label="Pie de página">
+        <a href="catalogo.html">Catálogo</a>
+        <a href="catalogo.html?categoria=relojes">Relojes</a>
+        <a href="catalogo.html?categoria=lociones">Lociones</a>
+        <a href="carrito.html">Carrito</a>
+      </nav>
+      <div>
+        <p><a href="https://wa.me/573105268939">Escribir por WhatsApp</a></p>
+      </div>
+    </div>
+    <p class="pie__legal">© <span data-anio>2026</span> JD Time</p>
+  </footer>
+  <div class="aviso" data-aviso hidden role="status"></div>
+  <script type="module" src="js/app.js"></script>
+  
+</body>
+</html>
